@@ -1,0 +1,185 @@
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+  background-image: url(background.jpeg);
+  color: white;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-bottom: solid white thin;
+  color: white;
+  background-color: black;
+  width: 100%;
+  min-height: 50px;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  background-color: black;
+  margin: 15px;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-color: white;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #525252;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  border: white solid thin;
+  color: white;
+  background-color: black;
+  min-width: 500px;
+  max-width: 70%;
+}
+
+#main span {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+#main h2 {
+  align-self: center;
+}
+
+.rocket {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top-color: white;
+  border-top-style: solid;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-width: thin;
+  margin: 1px;
+  padding: 10px 10px 0 10px;
+}
+
+.starlink {
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+  margin: 2px;
+}
+
+.name_s {
+  align-self: center;
+}
+
+.name {
+  font-size: 26px;
+}
+
+.pics {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+}
+
+.image {
+  width: 400px;
+}
+
+.image_link {
+  margin: 5px;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.btn {
+  color: white;
+  background-color: black;
+  width: 100px;
+  height: 30px;
+  border-color: white;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  padding: 1px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  color: white;
+  background-color: #525252;
+}
+
+.btn:disabled {
+  text-decoration: line-through;
+  color: white;
+  background-color: black;
+  cursor: default;
+}
+
+.expand {
+  align-self: center;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  color: white;
+  background-color: #444;
+  border: none;
+}
+
+.expand:hover {
+  color: white;
+  background: #333;
+}
+
+.expand:active {
+  border: none;
+}
+
+.details {
+  display: none;
+  width: 100%;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 8px 10px;
+}
+
+.down {
+  transform: rotate(45deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+}
